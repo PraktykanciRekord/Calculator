@@ -176,7 +176,7 @@ namespace liczydlo
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
-
+        //
         // 5
         private void five_button_Click(object sender, EventArgs e)
         {
