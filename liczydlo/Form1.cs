@@ -35,6 +35,7 @@ namespace liczydlo
                 }
                 catch
                 {
+                    
                     return 0;
                 }
             }
@@ -56,44 +57,11 @@ namespace liczydlo
             textBox1.Text = fnc.dodaj_znak_specjalny(sender, this);
         }
 
-        /*public void dodajTresc(object ll)
+        public void addDot(object sender)
         {
-            var btn = ll as Button;
-            if (btn != null)
-            {
-                textBox1.Text = textBox1.Text + btn.Text;
-            }
-        }*/
-
-        /*public void dodaj_znak_specjalny(object ll)
-        {
-            var btn = ll as Button;
-            string test = textBox1.Text;
-            if (test.Length != 0)
-            {
-                char[] chars = { '+', '-', '/', '*', '%' };
-                char last = test[test.Length - 1];
-
-                if (chars.Any(x => textBox1.Text.EndsWith(char.ToString(x))))
-                {
-                    bylo = false;
-                    if (btn != null)
-                    {
-                        string current_text = textBox1.Text;
-                        textBox1.Text = current_text.Remove(current_text.Length - 1, 1) + btn.Text;
-                    }
-                }
-                else if (last != char.Parse(btn.Text))
-                {
-                    bylo = false;
-                    if (btn != null)
-                    {
-                        textBox1.Text = textBox1.Text + btn.Text;
-                    }
-                }
-            }
-        }*/
-
+            functions fnc = new functions();
+            fnc.dotButton(sender, this);
+        }
 
         public Form1()
         {
@@ -277,7 +245,7 @@ namespace liczydlo
                 {
                     if (test.Contains('E'))
                     {
-                        errorLabel.Text = "Przeciążno zmienną";
+                        errorLabel.Text = "Poza zakresem";
                     }
                     if (test.Contains(','))
                     {

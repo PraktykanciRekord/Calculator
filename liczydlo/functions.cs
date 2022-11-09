@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
-//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace liczydlo
 {
@@ -46,6 +46,35 @@ namespace liczydlo
                     if (btn != null)
                     {
                         return currentVal + btn.Text;
+                    }
+                }
+            }
+            return "";
+        }
+        public string dotButton(object sender, Form1 frm)
+        {
+            string currentVal = frm.returneedVal().ToString();
+            bylo = frm.bylo;
+
+            if (!bylo)
+            {
+                bylo = true;
+                if (currentVal.Length == 0)
+                {
+                    currentVal = "0.";
+                }
+
+                if ((currentVal.Length != 0) && (currentVal != "0."))
+                {
+                    char[] chars = { '%', '*', '/', '+', '-' };
+                    if (chars.Any(x => currentVal.EndsWith(char.ToString(x))))
+                    {
+                        return "0.";
+                    }
+                    else
+                    {
+                        /*dodajTresc(sender);*/
+                        dodajTresc(sender);
                     }
                 }
             }
