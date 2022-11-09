@@ -20,3 +20,14 @@ C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\licz
 C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CoreCompileInputs.cache
 C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.exe
 C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.pdb
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.csproj.AssemblyReference.cache
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.Form1.resources
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.Properties.Resources.resources
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.csproj.GenerateResource.cache
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CoreCompileInputs.cache
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.exe
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\obj\Debug\liczydlo.pdb
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\bin\Debug\liczydlo.exe.config
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\bin\Debug\liczydlo.exe
+C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\liczydlo\bin\Debug\liczydlo.pdb

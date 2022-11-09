@@ -77,7 +77,7 @@ namespace liczydlo
         }
 
         // C
-        private void button1_Click(object sender, EventArgs e)
+        private void C_button_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
             errorLabel.Text = "";
@@ -85,7 +85,7 @@ namespace liczydlo
         }
 
         // %
-        private void button2_Click(object sender, EventArgs e)
+        private void modulo_button_Click(object sender, EventArgs e)
         {
             if (!(textBox1.Text.Contains(".")))
             {
@@ -94,7 +94,7 @@ namespace liczydlo
         }
 
         // Backspace
-        private void button3_Click(object sender, EventArgs e)
+        private void backspace_button_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length >= 1)
             {
@@ -103,75 +103,75 @@ namespace liczydlo
         }
 
         // /
-        private void button4_Click(object sender, EventArgs e)
+        private void devide_button_Click(object sender, EventArgs e)
         {
             dodaj_znak_specjalny(sender);
 
         }
 
         // 00
-        private void button16_Click(object sender, EventArgs e)
+        private void double_zero_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // 7
-        private void button8_Click(object sender, EventArgs e)
+        private void seven_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // 8
-        private void button7_Click(object sender, EventArgs e)
+        private void eight_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // 9
-        private void button6_Click(object sender, EventArgs e)
+        private void nine_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // *
-        private void button5_Click(object sender, EventArgs e)
+        private void multiple_button_Click(object sender, EventArgs e)
         {
             dodaj_znak_specjalny(sender);
         }
 
         // 4
-        private void button12_Click(object sender, EventArgs e)
+        private void four_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // 5
-        private void button11_Click(object sender, EventArgs e)
+        private void five_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // 6
-        private void button10_Click(object sender, EventArgs e)
+        private void six_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // -
-        private void button9_Click(object sender, EventArgs e)
+        private void minus_button_Click(object sender, EventArgs e)
         {
             dodaj_znak_specjalny(sender);
         }
 
         // 1
-        private void button20_Click(object sender, EventArgs e)
+        private void ones_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
@@ -179,34 +179,34 @@ namespace liczydlo
         }
 
         // 2
-        private void button19_Click(object sender, EventArgs e)
+        private void two_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // 3
-        private void button18_Click(object sender, EventArgs e)
+        private void three_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // +
-        private void button17_Click(object sender, EventArgs e)
+        private void plus_button_Click(object sender, EventArgs e)
         {
             dodaj_znak_specjalny(sender);
         }
 
         // 0
-        private void button15_Click(object sender, EventArgs e)
+        private void zero_button_Click(object sender, EventArgs e)
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
 
         // znak: '.'
-        private void button14_Click(object sender, EventArgs e)
+        private void dot_button_Click(object sender, EventArgs e)
         {
 
             string test = textBox1.Text;
@@ -234,7 +234,7 @@ namespace liczydlo
         }
 
         // =
-        private void button13_Click(object sender, EventArgs e)
+        private void equel_button_Click(object sender, EventArgs e)
         {
             errorLabel.Text = "";
             string test = textBox1.Text;
