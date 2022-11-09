@@ -60,7 +60,8 @@ namespace liczydlo
         public void addDot(object sender)
         {
             functions fnc = new functions();
-            fnc.dotButton(sender, this);
+            textBox1.Text = fnc.dotButton(sender, this);
+            bylo = true;
         }
 
         public Form1()
@@ -208,28 +209,7 @@ namespace liczydlo
         private void dot_button_Click(object sender, EventArgs e)
         {
 
-            string test = textBox1.Text;
-            if (!bylo)
-            {
-                bylo = true;
-                if (test.Length == 0)
-                {
-                    textBox1.Text = "0.";
-                }
-                if ((test.Length != 0) && (textBox1.Text != "0."))
-                {
-                    char[] chars = { '%', '*', '/', '+', '-' };
-                    if (chars.Any(x => textBox1.Text.EndsWith(char.ToString(x))))
-                    {
-                        textBox1.Text += "0.";
-                    }
-                    else
-                    {
-                        /*dodajTresc(sender);*/
-                        addButtonValue(sender);
-                    }
-                }
-            }
+            addDot(sender);
         }
 
         // =

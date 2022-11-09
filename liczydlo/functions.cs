@@ -61,7 +61,7 @@ namespace liczydlo
                 bylo = true;
                 if (currentVal.Length == 0)
                 {
-                    currentVal = "0.";
+                    return "0.";
                 }
 
                 if ((currentVal.Length != 0) && (currentVal != "0."))
@@ -69,16 +69,17 @@ namespace liczydlo
                     char[] chars = { '%', '*', '/', '+', '-' };
                     if (chars.Any(x => currentVal.EndsWith(char.ToString(x))))
                     {
-                        return "0.";
+                        return currentVal + "0.";
                     }
                     else
                     {
                         /*dodajTresc(sender);*/
-                        dodajTresc(sender);
+
+                        return currentVal + ".";
                     }
                 }
             }
-            return "";
+            return currentVal;
         }
 
     }
