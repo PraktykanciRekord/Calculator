@@ -24,29 +24,20 @@ namespace liczydlo
             return strVar;
         }
 
-        static Double Eval(String expression)
-        {
-            if (!(expression.Contains('E')))
-            {
-                try
-                {
-                    System.Data.DataTable table = new System.Data.DataTable();
-                    return Convert.ToDouble(table.Compute(expression, String.Empty));
-                }
-                catch
-                {
-                    
-                    return 0;
-                }
-            }
-            return 0;
-        }
 
         public void addButtonValue(object sender)
         {
             functions fnc = new functions();
-            //funkcja dodajTres zwraca stringa
-            textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);
+            if(!(textBox1.Text == "Nie dzielimy przez 0"))
+            {
+                //funkcja dodajTres zwraca stringa
+                textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);
+            }
+            else
+            {
+                textBox1.Text = "";
+                textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);
+            }
         }
 
         public void addOperatorValue(object sender)
@@ -62,6 +53,13 @@ namespace liczydlo
             functions fnc = new functions();
             textBox1.Text = fnc.dotButton(sender, this);
             bylo = true;
+        }
+
+        public void equalsButton()
+        {
+            functions fnc = new functions();
+            textBox1.Text = fnc.equalsButton(this);
+
         }
 
         public Form1()
@@ -215,46 +213,7 @@ namespace liczydlo
         // =
         private void equel_button_Click(object sender, EventArgs e)
         {
-            errorLabel.Text = "";
-            string test = textBox1.Text;
-            if (test.Length != 0)
-            {
-                string lastchar = test[test.Length - 1] + " ";
-                bool b = new char[] { '%', '*', '/', '+', '-' }.Any(s => lastchar.Contains(s));
-                if (!b)
-                {
-                    if (test.Contains('E'))
-                    {
-                        errorLabel.Text = "Poza zakresem";
-                    }
-                    if (test.Contains(','))
-                    {
-                        for (int i = 0; i < test.Length; i++)
-                        {
-                            if (test[i] == ',')
-                            {
-                                textBox1.Text = textBox1.Text.Remove(i, 1).Insert(i, ".");
-                            }
-                        }
-                    }
-                    Double cnvrt = Eval(textBox1.Text);
-                    if (cnvrt.ToString() == "∞" || cnvrt.ToString() == "NaN")
-                    {
-                        errorLabel.Text = "Nie dzielimy przez 0";
-                        textBox1.Text = "";
-                    }
-                    else
-                    {
-                        if (cnvrt.ToString().Contains(","))
-                        {
-                            bylo = true;
-                        }
-                        textBox1.Text = cnvrt.ToString();
-                    }
-
-                }
-
-            }
+            equalsButton();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
