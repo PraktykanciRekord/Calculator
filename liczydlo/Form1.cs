@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,18 @@ namespace liczydlo
     public partial class Form1 : Form
     {
         public bool bylo = false;
+
+
+        public string returneedVal()
+        {
+            string strVar = textBox1.Text;
+            return strVar;
+        }
+
+        public bool returnedBool()
+        {
+            return bylo;
+        }
 
         static Double Eval(String expression)
         {
@@ -33,6 +46,14 @@ namespace liczydlo
             textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);
         }
 
+        public void addOperatorValue(object sender)
+        {
+            returneedVal();
+            bylo = false;
+            functions fnc = new functions();
+            textBox1.Text = textBox1.Text + fnc.dodaj_znak_specjalny(sender);
+        }
+
         /*public void dodajTresc(object ll)
         {
             var btn = ll as Button;
@@ -42,7 +63,7 @@ namespace liczydlo
             }
         }*/
 
-        public void dodaj_znak_specjalny(object ll)
+        /*public void dodaj_znak_specjalny(object ll)
         {
             var btn = ll as Button;
             string test = textBox1.Text;
@@ -59,7 +80,8 @@ namespace liczydlo
                         string current_text = textBox1.Text;
                         textBox1.Text = current_text.Remove(current_text.Length - 1, 1) + btn.Text;
                     }
-                } else if (last != char.Parse(btn.Text))
+                }
+                else if (last != char.Parse(btn.Text))
                 {
                     bylo = false;
                     if (btn != null)
@@ -68,7 +90,7 @@ namespace liczydlo
                     }
                 }
             }
-        }
+        }*/
 
 
         public Form1()
@@ -89,7 +111,10 @@ namespace liczydlo
         {
             if (!(textBox1.Text.Contains(".")))
             {
-                dodaj_znak_specjalny(sender);
+
+                //dodaj_znak_specjalny(sender);
+                addButtonValue(sender);
+                
             }
         }
 
@@ -105,7 +130,8 @@ namespace liczydlo
         // /
         private void button4_Click(object sender, EventArgs e)
         {
-            dodaj_znak_specjalny(sender);
+            //dodaj_znak_specjalny(sender);
+            addButtonValue(sender);
 
         }
 
@@ -140,7 +166,8 @@ namespace liczydlo
         // *
         private void button5_Click(object sender, EventArgs e)
         {
-            dodaj_znak_specjalny(sender);
+            //dodaj_znak_specjalny(sender);
+            addButtonValue(sender);
         }
 
         // 4
@@ -167,7 +194,8 @@ namespace liczydlo
         // -
         private void button9_Click(object sender, EventArgs e)
         {
-            dodaj_znak_specjalny(sender);
+            //dodaj_znak_specjalny(sender);
+            addButtonValue(sender);
         }
 
         // 1
@@ -195,7 +223,8 @@ namespace liczydlo
         // +
         private void button17_Click(object sender, EventArgs e)
         {
-            dodaj_znak_specjalny(sender);
+            //dodaj_znak_specjalny(sender);
+            addButtonValue(sender);
         }
 
         // 0
