@@ -20,7 +20,8 @@ namespace liczydlo
 
         public string returneedVal()
         {
-            return textBox1.Text;
+            string strVar = textBox1.Text;
+            return strVar;
         }
 
         static Double Eval(String expression)
@@ -45,7 +46,7 @@ namespace liczydlo
             returneedVal();
             bylo = false;
             functions fnc = new functions();
-            textBox1.Text =  textBox1.Text + fnc.dodaj_znak_specjalny(sender);
+            textBox1.Text = fnc.dodaj_znak_specjalny(sender ,this);
         }
 
         /*public void dodajTresc(object ll)
@@ -103,7 +104,7 @@ namespace liczydlo
         // %
         private void modulo_button_Click(object sender, EventArgs e)
         {
-            if (!(textBox1.Text.Contains(".") || textBox1.Text.Contains(",")))
+            if (!(textBox1.Text.Contains(".")))
             {
 
                 //dodaj_znak_specjalny(sender);
@@ -170,7 +171,7 @@ namespace liczydlo
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
-
+       
         // 5
         private void five_button_Click(object sender, EventArgs e)
         {
