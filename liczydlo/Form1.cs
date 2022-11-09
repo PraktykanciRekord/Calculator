@@ -46,7 +46,7 @@ namespace liczydlo
             returneedVal();
             bylo = false;
             functions fnc = new functions();
-            textBox1.Text = fnc.dodaj_znak_specjalny(sender ,this);
+            textBox1.Text = fnc.dodaj_znak_specjalny(sender, this);
         }
 
         /*public void dodajTresc(object ll)
@@ -171,7 +171,7 @@ namespace liczydlo
             /*dodajTresc(sender);*/
             addButtonValue(sender);
         }
-       
+
         // 5
         private void five_button_Click(object sender, EventArgs e)
         {
@@ -274,16 +274,16 @@ namespace liczydlo
                     }
                     if (test.Contains(','))
                     {
-                        for(int i = 0; i < test.Length; i++)
+                        for (int i = 0; i < test.Length; i++)
                         {
-                            if(test[i] == ',')
+                            if (test[i] == ',')
                             {
                                 textBox1.Text = textBox1.Text.Remove(i, 1).Insert(i, ".");
                             }
                         }
                     }
                     Double cnvrt = Eval(textBox1.Text);
-                    if(cnvrt.ToString() == "∞" || cnvrt.ToString() == "NaN")
+                    if (cnvrt.ToString() == "∞" || cnvrt.ToString() == "NaN")
                     {
                         errorLabel.Text = "Nie dzielimy przez 0";
                         textBox1.Text = "";
