@@ -26,14 +26,22 @@ namespace liczydlo
             return 0;
         }
 
-        public void dodajTresc(object ll)
+        public void addButtonValue(object sender)
+        {
+            functions fnc = new functions();
+            //funkcja dodajTres zwraca stringa
+            textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);
+        }
+
+        /*public void dodajTresc(object ll)
         {
             var btn = ll as Button;
             if (btn != null)
             {
                 textBox1.Text = textBox1.Text + btn.Text;
             }
-        }
+        }*/
+
         public void dodaj_znak_specjalny(object ll)
         {
             var btn = ll as Button;
@@ -104,25 +112,29 @@ namespace liczydlo
         // 00
         private void button16_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // 7
         private void button8_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // 8
         private void button7_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // 9
         private void button6_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // *
@@ -134,19 +146,22 @@ namespace liczydlo
         // 4
         private void button12_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // 5
         private void button11_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // 6
         private void button10_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // -
@@ -158,20 +173,23 @@ namespace liczydlo
         // 1
         private void button20_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
 
         }
 
         // 2
         private void button19_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // 3
         private void button18_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // +
@@ -183,7 +201,8 @@ namespace liczydlo
         // 0
         private void button15_Click(object sender, EventArgs e)
         {
-            dodajTresc(sender);
+            /*dodajTresc(sender);*/
+            addButtonValue(sender);
         }
 
         // znak: '.'
@@ -207,7 +226,8 @@ namespace liczydlo
                     }
                     else
                     {
-                        dodajTresc(sender);
+                        /*dodajTresc(sender);*/
+                        addButtonValue(sender);
                     }
                 }
             }
