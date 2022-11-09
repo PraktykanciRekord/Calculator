@@ -28,8 +28,15 @@ namespace liczydlo
         {
             if (!(expression.Contains('E')))
             {
-                System.Data.DataTable table = new System.Data.DataTable();
-                return Convert.ToDouble(table.Compute(expression, String.Empty));
+                try
+                {
+                    System.Data.DataTable table = new System.Data.DataTable();
+                    return Convert.ToDouble(table.Compute(expression, String.Empty));
+                }
+                catch
+                {
+                    return 0;
+                }
             }
             return 0;
         }
