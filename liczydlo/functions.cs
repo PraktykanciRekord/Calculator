@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace liczydlo
 {
-    internal class functions
+    public class functions
     {
+
         public bool bylo;
         public string dodajTresc(object ll)
         {
@@ -20,9 +21,11 @@ namespace liczydlo
         }
         public string dodaj_znak_specjalny(object ll)
         {
+            
             Form1 frm = new Form1();
+
             string currentVal = frm.returneedVal();
-            bylo = frm.returnedBool();
+
 
             var btn = ll as Button;
             //string test = textBox1.Text;

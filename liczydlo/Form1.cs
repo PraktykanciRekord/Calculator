@@ -20,13 +20,7 @@ namespace liczydlo
 
         public string returneedVal()
         {
-            string strVar = textBox1.Text;
-            return strVar;
-        }
-
-        public bool returnedBool()
-        {
-            return bylo;
+            return textBox1.Text;
         }
 
         static Double Eval(String expression)
@@ -51,7 +45,7 @@ namespace liczydlo
             returneedVal();
             bylo = false;
             functions fnc = new functions();
-            textBox1.Text = textBox1.Text + fnc.dodaj_znak_specjalny(sender);
+            textBox1.Text =  textBox1.Text + fnc.dodaj_znak_specjalny(sender);
         }
 
         /*public void dodajTresc(object ll)
@@ -109,12 +103,12 @@ namespace liczydlo
         // %
         private void modulo_button_Click(object sender, EventArgs e)
         {
-            if (!(textBox1.Text.Contains(".")))
+            if (!(textBox1.Text.Contains(".") || textBox1.Text.Contains(",")))
             {
 
                 //dodaj_znak_specjalny(sender);
-                addButtonValue(sender);
-                
+                addOperatorValue(sender);
+
             }
         }
 
@@ -131,7 +125,7 @@ namespace liczydlo
         private void devide_button_Click(object sender, EventArgs e)
         {
             //dodaj_znak_specjalny(sender);
-            addButtonValue(sender);
+            addOperatorValue(sender);
 
         }
 
@@ -167,7 +161,7 @@ namespace liczydlo
         private void multiple_button_Click(object sender, EventArgs e)
         {
             //dodaj_znak_specjalny(sender);
-            addButtonValue(sender);
+            addOperatorValue(sender);
         }
 
         // 4
@@ -195,7 +189,7 @@ namespace liczydlo
         private void minus_button_Click(object sender, EventArgs e)
         {
             //dodaj_znak_specjalny(sender);
-            addButtonValue(sender);
+            addOperatorValue(sender);
         }
 
         // 1
@@ -224,7 +218,7 @@ namespace liczydlo
         private void plus_button_Click(object sender, EventArgs e)
         {
             //dodaj_znak_specjalny(sender);
-            addButtonValue(sender);
+            addOperatorValue(sender);
         }
 
         // 0
