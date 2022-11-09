@@ -28,7 +28,7 @@ namespace liczydlo
         public void addButtonValue(object sender)
         {
             functions fnc = new functions();
-            if(!(textBox1.Text == "Nie dzielimy przez 0"))
+            if(!(textBox1.Text == "Nie dzielimy przez 0" || textBox1.Text == "Duża liczba"))
             {
                 //funkcja dodajTres zwraca stringa
                 textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);

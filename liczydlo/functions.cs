@@ -112,7 +112,7 @@ namespace liczydlo
                 {
                     if (currentVal.Contains('E'))
                     {
-                        return "Poza zakresem";
+                        return "Duża liczba";
                     }
                     if (currentVal.Contains(','))
                     {
