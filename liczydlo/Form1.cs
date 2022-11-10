@@ -263,16 +263,47 @@ namespace liczydlo
 
         }
 
+        private void przerzucKursorNaKoniec()
+        {
+            textBox1.SelectionStart = textBox1.Text.Length;
+            textBox1.SelectionLength = 0;
+        }
+
         //bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
+            char[] chars = { '+', '-', '/', '%', '*', '.' };
+            char[] chars2 = { '+', '-', '/', '%', '*'};
+            bool contained = chars.Any(s => e.KeyChar == s);
+
+            //Blokuje stringi
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-            !(new char[] {'+','-','/','%','*','.'}.Any(s => e.KeyChar == s)))
+            !(contained))
             {
                 e.Handled = true;
             }
+
+            //blokuje dublowanie się kropek
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
+                e.Handled = true;
+            }
+
+            bool konczySieNaOperator = chars2.Any(x => (sender as TextBox).Text.EndsWith(char.ToString(x)));
+            //Jeżeli ostatni char jest operatorem i będziemy chcieli dać kolejnego operatora to podmieni starego
+            if ((contained) && konczySieNaOperator && (e.KeyChar != '.'))
+            {
+                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1) + e.KeyChar;
+                // Przerzuca kursor na koniec
+                przerzucKursorNaKoniec();
+                e.Handled = true;
+            }
+
+            //Jeżeli działanie jest puste albo ostatnim charem jest operator to przed . dodaje się 0
+            if((contained) && (textBox1.Text == "" || konczySieNaOperator) && (e.KeyChar == '.'))
+            {
+                textBox1.Text = textBox1.Text + "0" + e.KeyChar;
+                przerzucKursorNaKoniec();
                 e.Handled = true;
             }
         }
