@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Linq;
-using System.Windows.Forms;
 
 
 namespace liczydlo
@@ -9,23 +7,7 @@ namespace liczydlo
     internal class equalsbutton
     {
         public bool bylo;
-        static Double Eval(String expression)
-        {
-            if (!(expression.Contains('E')))
-            {
-                try
-                {
-                    System.Data.DataTable table = new System.Data.DataTable();
-                    return Convert.ToDouble(table.Compute(expression, String.Empty));
-                }
-                catch
-                {
-
-                    return 0;
-                }
-            }
-            return 0;
-        }
+        Double_Eval de = new Double_Eval();
         public string equalsButton(Form1 frm)
         {
             string currentVal = frm.returneedVal();
@@ -50,7 +32,7 @@ namespace liczydlo
                             }
                         }
                     }
-                    Double cnvrt = Eval(currentVal);
+                    Double cnvrt = de.Eval(currentVal);
                     if (cnvrt.ToString() == "∞" || cnvrt.ToString() == "-∞" || cnvrt.ToString() == "NaN")
                     {
                         return "Nie dzielimy przez 0";

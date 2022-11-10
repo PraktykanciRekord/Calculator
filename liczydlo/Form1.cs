@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace liczydlo
@@ -31,7 +23,7 @@ namespace liczydlo
             {
                 textBox1.Text = "";
             }
-            else if(textBox1.Text.Length > 0)
+            else if (textBox1.Text.Length > 0)
             {
                 textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
             }
@@ -41,7 +33,7 @@ namespace liczydlo
         public void addButtonValue(object sender)
         {
             dodajTresc dt = new dodajTresc();
-            if(!(textBox1.Text == "Nie dzielimy przez 0" || textBox1.Text == "Duża liczba"))
+            if (!(textBox1.Text == "Nie dzielimy przez 0" || textBox1.Text == "Duża liczba"))
             {
                 //funkcja dodajTres zwraca stringa
                 textBox1.Text = textBox1.Text + dt.dodajTresc1(sender);
@@ -60,11 +52,11 @@ namespace liczydlo
             {
                 textBox1.Text = "";
             }
-            if(textBox1.Text.Length == 1 && textBox1.Text[0] == '-')
+            if (textBox1.Text.Length == 1 && textBox1.Text[0] == '-')
             {
                 textBox1.Text = "";
             }
-            if(textBox1.Text.Length == 0)
+            if (textBox1.Text.Length == 0)
             {
                 textBox1.Text = textBox1.Text + "0";
             }
@@ -74,7 +66,7 @@ namespace liczydlo
             textBox1.Text = dzs.dodaj_znak_specjalny(sender, this);
 
 
-            
+
         }
 
         public void addDot(object sender)
@@ -195,8 +187,8 @@ namespace liczydlo
         private void minus_button_Click(object sender, EventArgs e)
         {
             //dodaj_znak_specjalny(sender);
-            if(textBox1.Text.Length != 0)
-            {   
+            if (textBox1.Text.Length != 0)
+            {
                 addOperatorValue(sender);
 
             }

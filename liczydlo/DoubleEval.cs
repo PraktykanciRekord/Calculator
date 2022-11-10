@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Linq;
-using System.Windows.Forms;
 
 
 namespace liczydlo
 {
-    internal class DoubleEval
+    internal class Double_Eval
     {
         // Wykonywanie działań
-        static Double Eval(String expression)
+        public  Double Eval(String expression)
         {
             if (!(expression.Contains('E')))
             {
@@ -27,7 +25,7 @@ namespace liczydlo
             return 0;
         }
 
-        
+
 
     }
 }
