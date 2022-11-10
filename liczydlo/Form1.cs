@@ -60,15 +60,21 @@ namespace liczydlo
             {
                 textBox1.Text = "";
             }
+            if(textBox1.Text.Length == 1 && textBox1.Text[0] == '-')
+            {
+                textBox1.Text = "";
+            }
             if(textBox1.Text.Length == 0)
             {
                 textBox1.Text = textBox1.Text + "0";
             }
-            
             returneedVal();
             bylo = false;
             functions fnc = new functions();
             textBox1.Text = fnc.dodaj_znak_specjalny(sender, this);
+
+
+            
         }
 
         public void addDot(object sender)
@@ -189,8 +195,12 @@ namespace liczydlo
         private void minus_button_Click(object sender, EventArgs e)
         {
             //dodaj_znak_specjalny(sender);
-            addOperatorValue(sender);
-            if(textBox1.Text.Length == 0)
+            if(textBox1.Text.Length != 0)
+            {   
+                addOperatorValue(sender);
+
+            }
+            else
             {
                 textBox1.Text += "-";
             }
