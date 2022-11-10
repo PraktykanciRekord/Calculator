@@ -306,6 +306,14 @@ namespace liczydlo
                 przerzucKursorNaKoniec();
                 e.Handled = true;
             }
+
+            //Przycisk enter wywołuje znak =
+            if (e.KeyChar == (char)13)
+            {
+                equalsButton();
+                textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
+                przerzucKursorNaKoniec();
+            }
         }
     }
 }
