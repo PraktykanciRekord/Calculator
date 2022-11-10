@@ -35,7 +35,7 @@ namespace liczydlo
             {
                 return btn.Text;
             }
-            return "error";
+            return "";
         }
         public string dodaj_znak_specjalny(object ll, Form1 frm)
         {
@@ -68,7 +68,7 @@ namespace liczydlo
                     }
                 }
             }
-            return "error";
+            return "";
         }
         public string dotButton(object sender, Form1 frm)
         {
@@ -125,7 +125,7 @@ namespace liczydlo
                         }
                     }
                     Double cnvrt = Eval(currentVal);
-                    if (cnvrt.ToString() == "∞" || cnvrt.ToString() == "NaN")
+                    if (cnvrt.ToString() == "∞" || cnvrt.ToString() == "-∞" || cnvrt.ToString() == "NaN")
                     {
                         return "Nie dzielimy przez 0";
                     }
@@ -142,7 +142,7 @@ namespace liczydlo
                 }
 
             }
-            return "error";
+            return "";
         }
 
     }

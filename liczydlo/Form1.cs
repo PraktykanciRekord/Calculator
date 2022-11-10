@@ -24,6 +24,19 @@ namespace liczydlo
             return strVar;
         }
 
+        public void backButton()
+        {
+            bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
+            if (b)
+            {
+                textBox1.Text = "";
+            }
+            else if(textBox1.Text.Length > 0)
+            {
+                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
+            }
+        }
+
 
         public void addButtonValue(object sender)
         {
@@ -42,6 +55,16 @@ namespace liczydlo
 
         public void addOperatorValue(object sender)
         {
+            bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
+            if (b)
+            {
+                textBox1.Text = "";
+            }
+            if(textBox1.Text.Length == 0)
+            {
+                textBox1.Text = textBox1.Text + "0";
+            }
+            
             returneedVal();
             bylo = false;
             functions fnc = new functions();
@@ -50,6 +73,11 @@ namespace liczydlo
 
         public void addDot(object sender)
         {
+            bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
+            if (b)
+            {
+                textBox1.Text = "";
+            }
             functions fnc = new functions();
             textBox1.Text = fnc.dotButton(sender, this);
             bylo = true;
@@ -90,10 +118,7 @@ namespace liczydlo
         // Backspace
         private void backspace_button_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length >= 1)
-            {
-                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1, 1);
-            }
+            backButton();
         }
 
         // /
@@ -165,6 +190,10 @@ namespace liczydlo
         {
             //dodaj_znak_specjalny(sender);
             addOperatorValue(sender);
+            if(textBox1.Text.Length == 0)
+            {
+                textBox1.Text += "-";
+            }
         }
 
         // 1
