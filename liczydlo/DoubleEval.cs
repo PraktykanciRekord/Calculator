@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 
-
 namespace liczydlo
 {
     internal class Double_Eval
@@ -24,8 +23,5 @@ namespace liczydlo
             }
             return 0;
         }
-
-
-
     }
 }

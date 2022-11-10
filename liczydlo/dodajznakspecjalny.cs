@@ -17,6 +17,7 @@ namespace liczydlo
             //string test = textBox1.Text;
             if (currentVal.Length != 0)
             {
+                
                 char[] chars = { '+', '-', '/', '*', '%' };
                 char last = currentVal[currentVal.Length - 1];
 
