@@ -211,7 +211,6 @@ namespace liczydlo
         {
             /*dodajTresc(sender);*/
             addButtonValue(sender);
-
         }
 
         // 2
@@ -264,6 +263,18 @@ namespace liczydlo
 
         }
 
-
+        //bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            !(new char[] {'+','-','/','%','*','.'}.Any(s => e.KeyChar == s)))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

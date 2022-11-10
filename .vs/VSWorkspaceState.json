@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\liczydlo"
   ],
-  "SelectedNode": "\\liczydlo.sln",
+  "SelectedNode": "\\liczydlo\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
