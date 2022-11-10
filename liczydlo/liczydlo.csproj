@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="functions.cs" />
+    <Compile Include="equalsButton.cs" />
+    <Compile Include="dotbutton.cs" />
+    <Compile Include="dodajznakspecjalny.cs" />
+    <Compile Include="dodajTresc.cs" />
+    <Compile Include="DoubleEval.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

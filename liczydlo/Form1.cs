@@ -40,16 +40,16 @@ namespace liczydlo
 
         public void addButtonValue(object sender)
         {
-            functions fnc = new functions();
+            dodajTresc dt = new dodajTresc();
             if(!(textBox1.Text == "Nie dzielimy przez 0" || textBox1.Text == "Duża liczba"))
             {
                 //funkcja dodajTres zwraca stringa
-                textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);
+                textBox1.Text = textBox1.Text + dt.dodajTresc1(sender);
             }
             else
             {
                 textBox1.Text = "";
-                textBox1.Text = textBox1.Text + fnc.dodajTresc(sender);
+                textBox1.Text = textBox1.Text + dt.dodajTresc1(sender);
             }
         }
 
@@ -70,8 +70,8 @@ namespace liczydlo
             }
             returneedVal();
             bylo = false;
-            functions fnc = new functions();
-            textBox1.Text = fnc.dodaj_znak_specjalny(sender, this);
+            dodajznakspecjalny dzs = new dodajznakspecjalny();
+            textBox1.Text = dzs.dodaj_znak_specjalny(sender, this);
 
 
             
@@ -84,15 +84,15 @@ namespace liczydlo
             {
                 textBox1.Text = "";
             }
-            functions fnc = new functions();
-            textBox1.Text = fnc.dotButton(sender, this);
+            dotbutton dts = new dotbutton();
+            textBox1.Text = dts.dotButton(sender, this);
             bylo = true;
         }
 
         public void equalsButton()
         {
-            functions fnc = new functions();
-            textBox1.Text = fnc.equalsButton(this);
+            equalsbutton eb = new equalsbutton();
+            textBox1.Text = eb.equalsButton(this);
 
         }
 
