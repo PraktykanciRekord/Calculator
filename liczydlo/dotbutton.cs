@@ -14,6 +14,7 @@ namespace liczydlo
             if (!bylo)
             {
                 bylo = true;
+                // Jeżeli wyrażenie jest puste i naciśniemy . to dodaje 0 przed nią
                 if (currentVal.Length == 0)
                 {
                     return "0.";
@@ -21,11 +22,13 @@ namespace liczydlo
 
                 if ((currentVal.Length != 0) && (currentVal != "0."))
                 {
+                    // Jeżeli ostatni znak jest operatorem to dodaje 0 przed .
                     char[] chars = { '%', '*', '/', '+', '-' };
                     if (chars.Any(x => currentVal.EndsWith(char.ToString(x))))
                     {
                         return currentVal + "0.";
                     }
+
                     else
                     {
                         /*dodajTresc(sender);*/

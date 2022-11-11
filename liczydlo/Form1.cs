@@ -267,6 +267,7 @@ namespace liczydlo
             char[] chars = { '+', '-', '/', '%', '*', '.' };
             char[] chars2 = { '+', '-', '/', '%', '*' };
             bool contained = chars.Any(s => e.KeyChar == s);
+            bool konczySieNaOperator = chars2.Any(x => (sender as TextBox).Text.EndsWith(char.ToString(x)));
 
             //Blokuje stringi
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
@@ -281,7 +282,6 @@ namespace liczydlo
                 e.Handled = true;
             }
 
-            bool konczySieNaOperator = chars2.Any(x => (sender as TextBox).Text.EndsWith(char.ToString(x)));
             //Jeżeli ostatni char jest operatorem i będziemy chcieli dać kolejnego operatora to podmieni starego
             if ((contained) && konczySieNaOperator && (e.KeyChar != '.'))
             {
