@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="funequalsButton.cs" />
+    <Compile Include="fundodajznakspecjalny.cs" />
+    <Compile Include="fundot.cs" />
     <Compile Include="equalsButton.cs" />
     <Compile Include="dotbutton.cs" />
     <Compile Include="dodajznakspecjalny.cs" />

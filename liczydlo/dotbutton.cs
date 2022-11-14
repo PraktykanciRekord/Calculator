@@ -1,7 +1,4 @@
-﻿using System.Linq;
-
-
-namespace liczydlo
+﻿namespace liczydlo
 {
     internal class dotbutton
     {
@@ -23,18 +20,8 @@ namespace liczydlo
                 if ((currentVal.Length != 0) && (currentVal != "0."))
                 {
                     // Jeżeli ostatni znak jest operatorem to dodaje 0 przed .
-                    char[] chars = { '%', '*', '/', '+', '-' };
-                    if (chars.Any(x => currentVal.EndsWith(char.ToString(x))))
-                    {
-                        return currentVal + "0.";
-                    }
-
-                    else
-                    {
-                        /*dodajTresc(sender);*/
-
-                        return currentVal + ".";
-                    }
+                    fundotbutton fnb = new fundotbutton();
+                    return (fnb.fundotButton(sender, frm));
                 }
             }
             return currentVal;

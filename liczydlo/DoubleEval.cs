@@ -6,7 +6,7 @@ namespace liczydlo
     internal class Double_Eval
     {
         // Wykonywanie działań
-        public  Double Eval(String expression)
+        public Double Eval(String expression)
         {
             if (!(expression.Contains('E')))
             {
