@@ -300,14 +300,21 @@ namespace liczydlo
                 e.Handled = true;
             }
 
+            if(e.KeyChar == (char)8)
+            {
+                bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
+                if (b)
+                {
+                    textBox1.Text = "";
+                }
+
+            }
+
             //Przycisk enter wywołuje znak =
             if (e.KeyChar == (char)13)
             {
                 equalsButton();
-                if (!(textBox1.Text.Contains('E')))
-                {
-                    equalsButton();
-                }
+                equalsButton();
                 textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
                 przerzucKursorNaKoniec();
 
