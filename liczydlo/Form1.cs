@@ -266,6 +266,7 @@ namespace liczydlo
             char[] chars = { '+', '-', '/', '%', '*', '.' };
             char[] chars2 = { '+', '-', '/', '%', '*' };
             bool contained = chars.Any(s => e.KeyChar == s);
+            bool dotIn = false;
             bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
             bool konczySieNaOperator = chars2.Any(x => (sender as TextBox).Text.EndsWith(char.ToString(x)));
 
@@ -277,14 +278,21 @@ namespace liczydlo
             }
 
             //blokuje dublowanie się kropek
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == '.') && !dotIn)
             {
+                dotIn = true;
                 e.Handled = true;
+            }
+
+            if(chars2.Any(s => e.KeyChar == s))
+            {
+                dotIn = false;
             }
 
             //Jeżeli ostatni char jest operatorem i będziemy chcieli dać kolejnego operatora to podmieni starego
             if ((contained) && konczySieNaOperator && (e.KeyChar != '.'))
             {
+                dotIn = false;
                 textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1) + e.KeyChar;
                 // Przerzuca kursor na koniec
                 przerzucKursorNaKoniec();
@@ -300,20 +308,20 @@ namespace liczydlo
             }
 
             //Backspace usuwwa całe napisy wynikające z nieprawidłowości
-            if(e.KeyChar == (char)8)
+            if (e.KeyChar == (char)8)
             {
                 if (b)
                 {
                     textBox1.Text = "";
                 }
-
             }
 
             //Przycisk enter wywołuje znak =
-            if (e.KeyChar == (char)13)
+            if (e.KeyChar == (char)13 && !konczySieNaOperator)
             {
+                dotIn = false;
                 equalsButton();
-                if (b)
+                if (b || textBox1.Text.Contains(','))
                 {
                     equalsButton();
                 }

@@ -17,7 +17,6 @@ namespace liczydlo
                 }
                 catch
                 {
-
                     return 0;
                 }
             }
