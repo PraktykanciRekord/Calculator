@@ -267,6 +267,7 @@ namespace liczydlo
             char[] chars = { '+', '-', '/', '%', '*', '.' };
             char[] chars2 = { '+', '-', '/', '%', '*' };
             bool contained = chars.Any(s => e.KeyChar == s);
+            bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
             bool konczySieNaOperator = chars2.Any(x => (sender as TextBox).Text.EndsWith(char.ToString(x)));
 
             //Blokuje stringi
@@ -300,9 +301,9 @@ namespace liczydlo
                 e.Handled = true;
             }
 
+            //Backspace usuwwa całe napisy wynikające z nieprawidłowości
             if(e.KeyChar == (char)8)
             {
-                bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
                 if (b)
                 {
                     textBox1.Text = "";
@@ -314,7 +315,10 @@ namespace liczydlo
             if (e.KeyChar == (char)13)
             {
                 equalsButton();
-                equalsButton();
+                if (b)
+                {
+                    equalsButton();
+                }
                 textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
                 przerzucKursorNaKoniec();
 
