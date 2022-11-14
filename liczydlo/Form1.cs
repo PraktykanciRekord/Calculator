@@ -85,7 +85,7 @@ namespace liczydlo
         {
             equalsbutton eb = new equalsbutton();
             textBox1.Text = eb.equalsButton(this);
-
+                
         }
 
         public Form1()
@@ -190,7 +190,6 @@ namespace liczydlo
             if (textBox1.Text.Length != 0)
             {
                 addOperatorValue(sender);
-
             }
             else
             {
@@ -293,10 +292,9 @@ namespace liczydlo
             }
 
             //Jeżeli działanie jest puste albo ostatnim charem jest operator to przed . dodaje się 0
-            if ((contained) && (textBox1.Text == "" || konczySieNaOperator) && (e.KeyChar == '.'))
+            if ((contained) && textBox1.Text == "" || konczySieNaOperator && (e.KeyChar == '.'))
             {
                 textBox1.Text = textBox1.Text + "0" + e.KeyChar;
-                textBox1.Text.Replace(',', '.');
                 przerzucKursorNaKoniec();
                 e.Handled = true;
             }
@@ -321,7 +319,7 @@ namespace liczydlo
                 }
                 textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
                 przerzucKursorNaKoniec();
-
+                e.Handled = false;
             }
         }
     }
