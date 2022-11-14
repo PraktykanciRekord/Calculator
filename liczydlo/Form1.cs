@@ -295,6 +295,7 @@ namespace liczydlo
             if ((contained) && (textBox1.Text == "" || konczySieNaOperator) && (e.KeyChar == '.'))
             {
                 textBox1.Text = textBox1.Text + "0" + e.KeyChar;
+                textBox1.Text.Replace(',', '.');
                 przerzucKursorNaKoniec();
                 e.Handled = true;
             }
@@ -303,8 +304,13 @@ namespace liczydlo
             if (e.KeyChar == (char)13)
             {
                 equalsButton();
+                if (!(textBox1.Text.Contains('E')))
+                {
+                    equalsButton();
+                }
                 textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
                 przerzucKursorNaKoniec();
+
             }
         }
     }

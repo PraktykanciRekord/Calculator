@@ -53,3 +53,14 @@ C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.Genera
 C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CoreCompileInputs.cache
 C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.exe
 C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.pdb
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\bin\Debug\liczydlo.exe.config
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\bin\Debug\liczydlo.exe
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\bin\Debug\liczydlo.pdb
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.csproj.AssemblyReference.cache
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.csproj.SuggestedBindingRedirects.cache
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.Form1.resources
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.Properties.Resources.resources
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.csproj.GenerateResource.cache
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CoreCompileInputs.cache
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.exe
+C:\Users\mkoci\Source\Repos\PraktykanciRekord\Calculator\Calculator\liczydlo\obj\Debug\liczydlo.pdb
