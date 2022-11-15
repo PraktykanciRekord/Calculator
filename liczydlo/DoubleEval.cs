@@ -6,22 +6,49 @@ namespace liczydlo
     public partial class Double_Eval
     {
         // Wykonywanie działań
-        public  Double Eval(String expression)
+        public string Eval(String expression)
         {
+            string[] errors = { "Duża liczba", "Nie dzielimy przez 0", "error" };
+            string expr = expression.ToString();
             if (!(expression.Contains('E')))
             {
                 try
                 {
                     System.Data.DataTable table = new System.Data.DataTable();
-                    return Convert.ToDouble(table.Compute(expression, String.Empty));
+                    double cnvrt = Convert.ToDouble(table.Compute(expr, String.Empty));
+                    string resault = cnvrt.ToString();
+
+                    if (resault.Contains('E'))
+                    {
+                        return "Duża liczba";
+                    }
+
+                    if(resault.ToString() == "∞" || resault.ToString() == "-∞" || resault.ToString() == "NaN")
+                    {
+                        return "Nie dzielimy przez 0";
+                    }
+
+                    if(resault.Contains(','))
+                    {
+                        resault = resault.Replace(',', '.');
+                    }
+
+
+                    return resault;
+
                 }
+
                 catch
                 {
 
-                    return 0;
+                    return "error";
                 }
             }
-            return 0;
+            else
+            {
+                return "Duża liczba";
+            }
+            return "null";
         }
     }
 }

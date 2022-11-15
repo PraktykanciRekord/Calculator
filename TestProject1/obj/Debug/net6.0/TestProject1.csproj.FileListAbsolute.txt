@@ -100,3 +100,11 @@ C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\Calculator\Calcu
 C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\Calculator\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.pdb
 C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\Calculator\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.genruntimeconfig.cache
 C:\Users\Praktykant02\Source\Repos\PraktykanciRekord\Calculator\Calculator\Calculator\TestProject1\obj\Debug\net6.0\ref\TestProject1.dll
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.csproj.AssemblyReference.cache
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.AssemblyInfoInputs.cache
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.AssemblyInfo.cs
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.csproj.CoreCompileInputs.cache
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.dll
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\refint\TestProject1.dll
+C:\Users\mkoci\Source\Repos\Calculator\TestProject1\obj\Debug\net6.0\TestProject1.pdb

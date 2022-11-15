@@ -6130,11 +6130,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mkoci\\source\\repos\\PraktykanciRekord\\Calculator\\Calculator\\Calculator\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\mkoci\\Source\\Repos\\Calculator\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "C:\\Users\\mkoci\\source\\repos\\PraktykanciRekord\\Calculator\\Calculator\\Calculator\\TestProject1\\TestProject1.csproj",
+      "projectPath": "C:\\Users\\mkoci\\Source\\Repos\\Calculator\\TestProject1\\TestProject1.csproj",
       "packagesPath": "C:\\Users\\mkoci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mkoci\\source\\repos\\PraktykanciRekord\\Calculator\\Calculator\\Calculator\\TestProject1\\obj\\",
+      "outputPath": "C:\\Users\\mkoci\\Source\\Repos\\Calculator\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6155,8 +6155,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\mkoci\\source\\repos\\PraktykanciRekord\\Calculator\\Calculator\\Calculator\\liczydlo\\liczydlo.csproj": {
-              "projectPath": "C:\\Users\\mkoci\\source\\repos\\PraktykanciRekord\\Calculator\\Calculator\\Calculator\\liczydlo\\liczydlo.csproj"
+            "C:\\Users\\mkoci\\Source\\Repos\\Calculator\\liczydlo\\liczydlo.csproj": {
+              "projectPath": "C:\\Users\\mkoci\\Source\\Repos\\Calculator\\liczydlo\\liczydlo.csproj"
             }
           }
         }

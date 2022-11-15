@@ -303,7 +303,7 @@ namespace liczydlo
             //Backspace usuwwa całe napisy wynikające z nieprawidłowości
             if (e.KeyChar == (char)8)
             {
-                if (b)
+                if(b)
                 {
                     textBox1.Text = "";
                 }
@@ -313,10 +313,10 @@ namespace liczydlo
             if (e.KeyChar == (char)13 && !konczySieNaOperator)
             {
                 equalsButton();
-                if (b || textBox1.Text.Contains(','))
+                /*if (b || textBox1.Text.Contains(','))
                 {
                     equalsButton();
-                }
+                }*/
                 textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
                 przerzucKursorNaKoniec();
                 e.Handled = false;

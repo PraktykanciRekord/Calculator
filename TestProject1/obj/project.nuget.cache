@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LKT0aDOuoF5xGb6tD7oBCKUYjwGhpb8sqUgvCBhR1O7qQQQ26VYbtAxuNYP2ts5I9Ftop+vQG4fOl5KpF/CTJA==",
+  "dgSpecHash": "3ROebhbOgtBnXXk6IBOP06PYh1k+6HBgefihisIf00zxPd7Nt88g/UvodQhDpaIPSk+zHe/BOaL5S6lkph5trA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mkoci\\source\\repos\\PraktykanciRekord\\Calculator\\Calculator\\Calculator\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "C:\\Users\\mkoci\\Source\\Repos\\Calculator\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mkoci\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\mkoci\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
