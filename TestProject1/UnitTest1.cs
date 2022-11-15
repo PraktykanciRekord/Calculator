@@ -11,7 +11,7 @@ namespace MyTestes
         public double Test1()
         {
             // arrange
-            Double_Eval de = new Double_Eval();
+            ReturnSolution de = new ReturnSolution();
 
             // act
 

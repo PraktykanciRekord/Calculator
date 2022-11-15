@@ -5,7 +5,7 @@ namespace liczydlo
 {
     internal class equalsbutton
     {
-        Double_Eval de = new Double_Eval();
+        ReturnSolution de = new ReturnSolution();
         public string equalsButton(Form1 frm)
         {
             string currentVal = frm.returneedVal();

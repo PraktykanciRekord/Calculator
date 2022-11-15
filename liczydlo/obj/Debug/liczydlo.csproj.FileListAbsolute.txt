@@ -64,3 +64,6 @@ C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.Genera
 C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CoreCompileInputs.cache
 C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.exe
 C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.pdb
+C:\Users\mkoci\source\repos\Calculator\liczydlo\bin\Debug\Calculator.Core.dll
+C:\Users\mkoci\source\repos\Calculator\liczydlo\bin\Debug\Calculator.Core.pdb
+C:\Users\mkoci\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CopyComplete

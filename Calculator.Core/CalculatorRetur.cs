@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace liczydlo
+namespace Calculator.Core
 {
-    public partial class Double_Eval
-    {
-        // Wykonywanie działań
+    public class CalculatorReturnSolution
+    { 
+            // Wykonywanie działań
         public string Eval(String expression)
         {
             string[] errors = { "Duża liczba", "Nie dzielimy przez 0", "error" };
@@ -23,12 +26,12 @@ namespace liczydlo
                         return "Duża liczba";
                     }
 
-                    if(resault.ToString() == "∞" || resault.ToString() == "-∞" || resault.ToString() == "NaN")
+                    if (resault.ToString() == "∞" || resault.ToString() == "-∞" || resault.ToString() == "NaN")
                     {
                         return "Nie dzielimy przez 0";
                     }
 
-                    if(resault.Contains(','))
+                    if (resault.Contains(','))
                     {
                         resault = resault.Replace(',', '.');
                     }
@@ -48,7 +51,6 @@ namespace liczydlo
             {
                 return "Duża liczba";
             }
-            return "null";
         }
     }
 }
