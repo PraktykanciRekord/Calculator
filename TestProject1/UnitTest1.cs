@@ -20,7 +20,7 @@ namespace MyTestes
             Assert.Equal(4, de.Eval("2+2"));
             Assert.Equal(6, de.Eval("3+3"));
             Assert.Equal(6, de.Eval("2+2*2"));
-            Assert.Equal(3, de.Eval("0"));
+            Assert.Equal(0, de.Eval("0"));
             Assert.Equal(12, de.Eval("12"));
             return 0;
         }
