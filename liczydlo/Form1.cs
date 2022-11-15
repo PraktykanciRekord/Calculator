@@ -268,6 +268,9 @@ namespace liczydlo
             char[] chars2 = { '+', '-', '/', '%', '*' };
             bool contained = chars.Any(s => e.KeyChar == s);
 
+            bool b = new string[] { "Duża liczba", "Nie dzielimy przez 0", "error" }.Any(s => textBox1.Text.Contains(s));
+            bool konczySieNaOperator = chars2.Any(x => (sender as TextBox).Text.EndsWith(char.ToString(x)));
+
             //Blokuje stringi
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
             !(contained))
@@ -281,12 +284,10 @@ namespace liczydlo
                 e.Handled = true;
             }
 
-            bool konczySieNaOperator = chars2.Any(x => (sender as TextBox).Text.EndsWith(char.ToString(x)));
             //Jeżeli ostatni char jest operatorem i będziemy chcieli dać kolejnego operatora to podmieni starego
             if ((contained) && konczySieNaOperator && (e.KeyChar != '.'))
             {
                 textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1) + e.KeyChar;
-                // Przerzuca kursor na koniec
                 przerzucKursorNaKoniec();
                 e.Handled = true;
             }
@@ -299,12 +300,26 @@ namespace liczydlo
                 e.Handled = true;
             }
 
+            //Backspace usuwwa całe napisy wynikające z nieprawidłowości
+            if (e.KeyChar == (char)8)
+            {
+                if (b)
+                {
+                    textBox1.Text = "";
+                }
+            }
+
             //Przycisk enter wywołuje znak =
-            if (e.KeyChar == (char)13)
+            if (e.KeyChar == (char)13 && !konczySieNaOperator)
             {
                 equalsButton();
+                if (b || textBox1.Text.Contains(','))
+                {
+                    equalsButton();
+                }
                 textBox1.Text = textBox1.Text.Replace(Environment.NewLine, "");
                 przerzucKursorNaKoniec();
+                e.Handled = false;
             }
         }
     }
