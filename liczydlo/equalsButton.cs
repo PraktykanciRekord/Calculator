@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Linq;
+using Calculator.Core;
 
 namespace liczydlo
 {
     internal class equalsbutton
     {
-        ReturnSolution de = new ReturnSolution();
+        /*ReturnSolution de = new ReturnSolution();*/
+        CalculatorReturnSolution crs = new CalculatorReturnSolution();
         public string equalsButton(Form1 frm)
         {
             string currentVal = frm.returneedVal();
@@ -15,7 +17,7 @@ namespace liczydlo
                 bool b = new char[] { '%', '*', '/', '+', '-' }.Any(s => lastchar.Contains(s));
                 if (!b)
                 {
-                    string cnvrt = de.Eval(currentVal);
+                    string cnvrt = crs.showSolution(currentVal);
                     return cnvrt;
                 }
             }

@@ -9,7 +9,7 @@ namespace Calculator.Core
     public class CalculatorReturnSolution
     { 
             // Wykonywanie działań
-        public string Eval(String expression)
+        public string showSolution(String expression)
         {
             string[] errors = { "Duża liczba", "Nie dzielimy przez 0", "error" };
             string expr = expression.ToString();

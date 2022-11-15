@@ -11,7 +11,7 @@ namespace liczydlo
         {
 
             CalculatorReturnSolution crs = new CalculatorReturnSolution();
-            return crs.Eval(expression);
+            return crs.showSolution(expression);
 
 
             /*string[] errors = { "Duża liczba", "Nie dzielimy przez 0", "error" };
