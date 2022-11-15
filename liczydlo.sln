@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liczydlo", "liczydlo\liczydlo.csproj", "{20A3D692-672F-48FC-96B6-694A4960E71D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{EEDEB025-1522-452C-AFA5-C7C2B595D7B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{20A3D692-672F-48FC-96B6-694A4960E71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20A3D692-672F-48FC-96B6-694A4960E71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20A3D692-672F-48FC-96B6-694A4960E71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDEB025-1522-452C-AFA5-C7C2B595D7B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDEB025-1522-452C-AFA5-C7C2B595D7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDEB025-1522-452C-AFA5-C7C2B595D7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDEB025-1522-452C-AFA5-C7C2B595D7B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

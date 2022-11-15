@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace liczydlo
 {
-    internal class Double_Eval
+    public partial class Double_Eval
     {
         // Wykonywanie działań
         public  Double Eval(String expression)
