@@ -4,3 +4,9 @@ C:\Users\mkoci\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core
 C:\Users\mkoci\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core.csproj.CoreCompileInputs.cache
 C:\Users\mkoci\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core.dll
 C:\Users\mkoci\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core.pdb
+C:\Users\Praktykant02\source\repos\Calculator\Calculator.Core\bin\Debug\Calculator.Core.dll
+C:\Users\Praktykant02\source\repos\Calculator\Calculator.Core\bin\Debug\Calculator.Core.pdb
+C:\Users\Praktykant02\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core.csproj.AssemblyReference.cache
+C:\Users\Praktykant02\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core.csproj.CoreCompileInputs.cache
+C:\Users\Praktykant02\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core.dll
+C:\Users\Praktykant02\source\repos\Calculator\Calculator.Core\obj\Debug\Calculator.Core.pdb

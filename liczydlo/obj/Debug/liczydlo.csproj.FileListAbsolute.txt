@@ -67,3 +67,17 @@ C:\Users\mkoci\Source\Repos\Calculator\liczydlo\obj\Debug\liczydlo.pdb
 C:\Users\mkoci\source\repos\Calculator\liczydlo\bin\Debug\Calculator.Core.dll
 C:\Users\mkoci\source\repos\Calculator\liczydlo\bin\Debug\Calculator.Core.pdb
 C:\Users\mkoci\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CopyComplete
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.AssemblyReference.cache
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.Form1.resources
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.Properties.Resources.resources
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.GenerateResource.cache
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CoreCompileInputs.cache
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\bin\Debug\liczydlo.exe.config
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\bin\Debug\liczydlo.exe
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\bin\Debug\liczydlo.pdb
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\bin\Debug\Calculator.Core.dll
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\bin\Debug\Calculator.Core.pdb
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.csproj.CopyComplete
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.exe
+C:\Users\Praktykant02\source\repos\Calculator\liczydlo\obj\Debug\liczydlo.pdb

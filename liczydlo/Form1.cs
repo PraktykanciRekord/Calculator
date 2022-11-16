@@ -261,7 +261,6 @@ namespace liczydlo
             textBox1.SelectionStart = textBox1.Text.Length;
             textBox1.SelectionLength = 0;
         }
-
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char[] chars = { '+', '-', '/', '%', '*', '.' };

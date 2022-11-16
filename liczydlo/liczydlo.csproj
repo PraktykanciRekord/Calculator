@@ -66,7 +66,6 @@
     <Compile Include="dotbutton.cs" />
     <Compile Include="dodajznakspecjalny.cs" />
     <Compile Include="dodajTresc.cs" />
-    <Compile Include="Solution.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

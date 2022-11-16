@@ -21,20 +21,13 @@ namespace Calculator.Core
                     double cnvrt = Convert.ToDouble(table.Compute(expr, String.Empty));
                     string resault = cnvrt.ToString();
 
-                    if (resault.Contains('E'))
-                    {
-                        return "Duża liczba";
-                    }
 
                     if (resault.ToString() == "∞" || resault.ToString() == "-∞" || resault.ToString() == "NaN")
                     {
                         return "Nie dzielimy przez 0";
                     }
 
-                    if (resault.Contains(','))
-                    {
-                        resault = resault.Replace(',', '.');
-                    }
+                    resault = resault.Replace(',', '.');
 
 
                     return resault;
